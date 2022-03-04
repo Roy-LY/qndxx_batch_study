@@ -23,8 +23,7 @@ jobs:
         with:
           python-version: 3.x
       
-      - name: Install pip dependencies
-        working-directory: stuhealth
+      - name: Install pip dependencies      
         run: pip install -U -r mid.txt
           
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
