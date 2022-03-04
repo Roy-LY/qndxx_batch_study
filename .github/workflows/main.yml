@@ -21,11 +21,8 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
-      
-      - name: Install pip dependencies      
-        run: pip install -U -r mid.txt
+          python-version: 3.x    
           
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
-      - name: Run a one-line script
+      - name: Run Youthstudy
         run: python main.py
