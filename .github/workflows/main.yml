@@ -24,7 +24,9 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x    
+          python-version: 3.x   
+          cache: pip
+          cache-dependency-path: requirements.txt
           
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
       - name: Run Youthstudy
