@@ -18,8 +18,11 @@ jobs:
 
     # 指出这个build任务的步骤
     steps:
-
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+          
       # 步骤，这里只写了一个步骤，目的是输出hello github acition
       - name: Run a one-line script
-        run: echo Hello, github action!
-
+        run: python main.py
