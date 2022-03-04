@@ -18,6 +18,9 @@ jobs:
 
     # 指出这个build任务的步骤
     steps:
+      - name: 检查分支
+        uses: actions/checkout@v2
+
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
